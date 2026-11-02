@@ -3,104 +3,151 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Para dermatólogos · Borrador</title>
-<meta name="description" content="Borrador de trabajo de una página para dermatólogos en Colombia. Aún sin mediciones de laboratorio.">
-<meta property="og:title" content="Para dermatólogos · Borrador">
-<meta property="og:description" content="La fotoprotección que el paciente no tiene que volver a aplicar. Borrador de trabajo: sin precios ni venta.">
+<title>Nosadia · Para dermatólogos · Borrador</title>
+<meta name="description" content="Borrador de trabajo. Una chaqueta de tela UPF 50+ como complemento del protector solar, presentada a dermatólogos en Colombia.">
+<meta property="og:title" content="Nosadia · Para dermatólogos">
+<meta property="og:description" content="Protege la piel antes de que el sol la toque. Un complemento del protector solar. Borrador de trabajo: sin precios ni venta.">
 <meta property="og:image" content="https://chiguirito.github.io/uv-jacket-draft/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://chiguirito.github.io/uv-jacket-draft/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%234A5040'/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Marcellus&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Poppins:wght@400;500&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Shared drawings. Provisional line art, not product photos. -->
 <svg class="svg-defs" aria-hidden="true" focusable="false">
   <defs>
     <pattern id="perf" width="9" height="9" patternUnits="userSpaceOnUse">
-      <rect width="9" height="9" fill="#646A56"></rect>
-      <circle cx="4.5" cy="4.5" r="1.25" fill="#1E2119"></circle>
+      <rect width="9" height="9" fill="#565A2E"></rect>
+      <circle cx="4.5" cy="4.5" r="1.3" fill="#EBE3D0"></circle>
     </pattern>
     <pattern id="perf-lg" width="14" height="14" patternUnits="userSpaceOnUse">
-      <rect width="14" height="14" fill="#565C4A"></rect>
-      <circle cx="7" cy="7" r="1.9" fill="#1E2119"></circle>
+      <rect width="14" height="14" fill="#565A2E"></rect>
+      <circle cx="7" cy="7" r="1.9" fill="#EBE3D0"></circle>
     </pattern>
     <g id="j-body">
-      <path d="M170 198C150 210 138 230 130 256L84 458 132 472 178 312Z" fill="#4A5040"></path>
-      <path d="M350 198C370 210 382 230 390 256L436 458 388 472 342 312Z" fill="#4A5040"></path>
-      <path d="M206 172C190 178 178 186 170 198L176 300 170 520H350L344 300 350 198C342 186 330 178 314 172Z" fill="#535947"></path>
-      <path d="M170 198 178 312M350 198 342 312" fill="none" stroke="#2F3328" stroke-width="1.5"></path>
-      <path d="M260 172V520" fill="none" stroke="#2F3328" stroke-width="2"></path>
-      <path d="M198 402 226 464M322 402 294 464" fill="none" stroke="#2F3328" stroke-width="2"></path>
-      <path d="M170 506H350" fill="none" stroke="#2F3328" stroke-width="1.2" stroke-dasharray="3 3"></path>
+      <path d="M170 198C150 210 138 230 130 256L84 458 132 472 178 312Z" fill="#565A2E"></path>
+      <path d="M350 198C370 210 382 230 390 256L436 458 388 472 342 312Z" fill="#565A2E"></path>
+      <path d="M206 172C190 178 178 186 170 198L176 300 170 520H350L344 300 350 198C342 186 330 178 314 172Z" fill="#565A2E"></path>
+      <path d="M170 198 178 312M350 198 342 312M260 172V520M198 402 226 464M322 402 294 464" fill="none" stroke="#EBE3D0" stroke-width="1.5"></path>
     </g>
     <g id="j-cuffs">
-      <path d="M84 458 132 472 124 504 76 490Z" fill="#3C4133"></path>
-      <path d="M436 458 388 472 396 504 444 490Z" fill="#3C4133"></path>
+      <path d="M84 458 132 472 124 504 76 490Z" fill="#565A2E"></path>
+      <path d="M436 458 388 472 396 504 444 490Z" fill="#565A2E"></path>
+      <path d="M84 458 132 472M436 458 388 472" fill="none" stroke="#EBE3D0" stroke-width="1.5"></path>
     </g>
     <g id="j-hands">
-      <path d="M84 458 132 472 122 524C118 540 82 536 74 518Z" fill="#3C4133"></path>
-      <path d="M436 458 388 472 398 524C402 540 438 536 446 518Z" fill="#3C4133"></path>
-      <path d="M84 458 132 472M436 458 388 472" fill="none" stroke="#20231B" stroke-width="2"></path>
+      <path d="M84 458 132 472 122 524C118 540 82 536 74 518Z" fill="#565A2E"></path>
+      <path d="M436 458 388 472 398 524C402 540 438 536 446 518Z" fill="#565A2E"></path>
+      <path d="M84 458 132 472M436 458 388 472" fill="none" stroke="#EBE3D0" stroke-width="1.5"></path>
+      <ellipse cx="112" cy="504" rx="4" ry="9" fill="#EBE3D0"></ellipse>
+      <ellipse cx="408" cy="504" rx="4" ry="9" fill="#EBE3D0"></ellipse>
     </g>
-    <path id="j-hood" d="M200 178C184 130 190 62 226 38 246 26 274 26 294 38 330 62 336 130 320 178 300 194 220 194 200 178Z" fill="#4A5040"></path>
+    <path id="j-hood" d="M200 178C184 130 190 62 226 38 246 26 274 26 294 38 330 62 336 130 320 178 300 194 220 194 200 178Z" fill="#565A2E"></path>
+    <ellipse id="j-face" cx="260" cy="108" rx="38" ry="54" fill="#EBE3D0"></ellipse>
     <g id="j-brim">
-      <path d="M186 84C212 48 308 48 334 84 340 94 336 102 328 98 298 78 222 78 192 98 184 102 180 94 186 84Z" fill="#32372A"></path>
-      <path d="M212 72 208 84M236 62 233 76M260 58V72M284 62 287 76M308 72 312 84" fill="none" stroke="#7C8270" stroke-width="1.2"></path>
+      <path d="M186 84C212 48 308 48 334 84 340 94 336 102 328 98 298 78 222 78 192 98 184 102 180 94 186 84Z" fill="#565A2E" stroke="#EBE3D0" stroke-width="1.5"></path>
+      <path d="M212 72 208 84M236 62 233 76M260 58V72M284 62 287 76M308 72 312 84" fill="none" stroke="#EBE3D0" stroke-width="1.2"></path>
     </g>
-    <path id="j-panel" d="M223.7 124C238 134 282 134 296.3 124A38 54 0 0 1 223.7 124Z" fill="url(#perf)"></path>
+    <g id="j-panel">
+      <path d="M223.7 118C238 128 282 128 296.3 118A38 54 0 0 1 223.7 118Z" fill="url(#perf)"></path>
+      <path d="M260 126V172" fill="none" stroke="#EBE3D0" stroke-width="1.5"></path>
+    </g>
     <g id="j-hood-down">
-      <path d="M208 180C204 150 316 150 312 180L330 200H190Z" fill="#3C4133"></path>
+      <path d="M208 180C204 150 316 150 312 180L330 200H190Z" fill="#565A2E"></path>
+      <ellipse cx="260" cy="176" rx="36" ry="11" fill="#EBE3D0"></ellipse>
     </g>
   </defs>
 </svg>
 
 <div class="draft" role="note">
-  <p>Borrador de trabajo. Todavía no hay mediciones de laboratorio, el formulario no envía datos y esto no es una oferta. Lo que aparece <span class="tbc">[ASÍ]</span> está pendiente.</p>
+  <p>Borrador de trabajo. Esto no es una oferta. Lo que aparece <span class="tbc">[ASÍ]</span> está pendiente.</p>
 </div>
 
 <header class="site-head">
-  <div class="wordmark"><span class="tbc">[MARCA]</span></div>
+  <a href="#inicio" aria-label="Nosadia, inicio"><img src="img/logo.svg" alt="Nosadia" width="148" height="77"></a>
   <nav aria-label="Principal">
     <span>Para profesionales de la salud</span>
-    <a href="#lista">Lista de espera</a>
+    <a href="#contacto">Contacto</a>
   </nav>
 </header>
 
-<main>
+<main id="inicio">
 
-<!-- HERO -->
+<!-- HERO · ivory, burgundy, dusty rose -->
 <section class="hero">
   <div class="hero-copy">
-    <p class="eyebrow">Para dermatólogos en Colombia</p>
-    <h1>La fotoprotección que el paciente no tiene que volver a aplicar.</h1>
-    <p class="lead">Una chaqueta liviana con capucha, visera desmontable y mangas que se extienden sobre la mano, para las zonas que el protector solar suele dejar sin cubrir. Medida en laboratorio, color por color y tela por tela. <span class="tbc">[PENDIENTE]</span> La presentamos primero a dermatólogos.</p>
-    <a class="btn" href="#lista">Unirme a la lista de espera</a>
+    <p class="label">Para dermatólogos en Colombia</p>
+    <h1>Protege la piel antes de que el sol la toque.</h1>
+    <p class="lead">Una chaqueta liviana de tela UPF 50+<sup><a href="#datos">*</a></sup>, pensada como complemento del protector solar: menos piel que depende de una crema y una fotoprotección más completa.</p>
+    <a class="btn" href="#contacto">Escríbanos</a>
     <p class="small measure">Aquí no hay precios ni venta. Esta página es para evaluarla y resolver sus preguntas.</p>
   </div>
-  <figure class="hero-figure lit">
-    <svg viewBox="0 0 520 560" role="img" aria-label="Ilustración de la chaqueta con la capucha puesta, visera y mangas que cubren las manos">
-      <use href="#j-hood"></use>
-      <ellipse cx="260" cy="108" rx="38" ry="54" fill="#2A2D23"></ellipse>
-      <use href="#j-brim"></use>
-      <use href="#j-body"></use>
-      <use href="#j-hands"></use>
-    </svg>
-    <figcaption class="note">IMG-01 · Foto pendiente: la chaqueta sola, pared de yeso, un haz de luz de ventana. Ilustración provisional.</figcaption>
+  <figure class="hero-figure">
+    <div class="hero-photo">
+      <img src="img/jacket-olive.webp" width="1004" height="1580" alt="Chaqueta color olivo con capucha, visera ancha y panel facial cerrado con cremallera">
+    </div>
+    <figcaption class="small">Imagen de referencia. Las fotos definitivas llegarán con la muestra.</figcaption>
   </figure>
 </section>
 
-<!-- THE GAP -->
-<section class="ruled">
+<!-- COMPLEMENT · ivory, burgundy, dusty rose -->
+<section class="r-highlight" id="complemento">
+  <div class="wrap stack-lg">
+    <div class="split">
+      <div class="stack">
+        <h2 class="h2">Un complemento del protector solar, no un reemplazo.</h2>
+        <hr class="dash">
+        <p class="measure">La tela detiene la radiación antes de que llegue a la piel. El protector solar actúa ya sobre ella. Usados juntos, cada uno cubre lo que el otro no alcanza.</p>
+      </div>
+      <figure class="compare-fig">
+        <svg viewBox="0 0 560 204" role="img" aria-label="Dos esquemas. Con la tela, la radiación se detiene en la tela, antes de la piel. Con protector solar, la radiación llega hasta el filtro, sobre la piel.">
+          <g stroke="#7B3136" stroke-width="1.6" fill="none">
+            <path d="M40 14 62 96M86 14 108 96M132 14 154 96M178 14 200 96"></path>
+            <path d="M320 14 358 150M366 14 404 150M412 14 450 150M458 14 496 150"></path>
+          </g>
+          <g fill="#7B3136">
+            <rect x="24" y="96" width="232" height="18"></rect>
+            <rect x="304" y="150" width="232" height="6"></rect>
+          </g>
+          <g fill="#AE8A8A">
+            <rect x="24" y="156" width="232" height="44"></rect>
+            <rect x="304" y="156" width="232" height="44"></rect>
+          </g>
+        </svg>
+        <figcaption class="compare-caps small">
+          <p><b>Con la tela</b><br>Se detiene antes de la piel</p>
+          <p><b>Con protector solar</b><br>Llega hasta el filtro, sobre la piel</p>
+        </figcaption>
+      </figure>
+    </div>
+
+    <table class="compare">
+      <thead>
+        <tr><td class="corner"></td><th scope="col" class="compare-col">Protector solar</th><th scope="col" class="compare-col">Tela</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">Dónde actúa</th><td data-label="Protector solar">Sobre la piel.</td><td data-label="Tela">Antes de llegar a la piel.</td></tr>
+        <tr><th scope="row">De qué depende</th><td data-label="Protector solar">De la cantidad, la uniformidad y la reaplicación.<sup><a href="#ref-2">2</a></sup></td><td data-label="Tela">De llevarla puesta. No hay que dosificar ni reaplicar.</td></tr>
+        <tr><th scope="row">Qué queda sobre la piel</th><td data-label="Protector solar">Los filtros. En un ensayo con uso máximo, seis filtros orgánicos superaron el umbral de absorción sistémica de la FDA; sus autores aclaran que esto no indica que deba dejar de usarse.<sup><a href="#ref-10">10</a></sup> Los filtros orgánicos pueden causar dermatitis de contacto o fotoalérgica en algunos pacientes.<sup><a href="#ref-11">11</a></sup></td><td data-label="Tela">Ningún producto sobre la piel cubierta. En la tela analizada no se detectó formaldehído ni aminas aromáticas prohibidas.</td></tr>
+        <tr><th scope="row">Dónde se queda corto</th><td data-label="Protector solar">En las zonas que se olvidan al aplicarlo.<sup><a href="#ref-2">2</a></sup></td><td data-label="Tela">En la piel que no cubre: los ojos y su contorno.</td></tr>
+      </tbody>
+    </table>
+
+    <p class="takeaway">Menos piel que depende de una crema. La piel expuesta, sobre todo el rostro, sigue necesitando protector solar.</p>
+  </div>
+</section>
+
+<!-- THE GAP · oatmeal panel, burgundy -->
+<section class="r-panel">
   <div class="wrap split">
     <div class="stack">
       <h2 class="h2">La ropa es uno de los tres pilares. Rara vez se indica por nombre.</h2>
@@ -123,229 +170,250 @@
   </div>
 </section>
 
-<!-- COVERAGE -->
-<section class="tinted" id="cobertura">
+<!-- FABRICS · ivory, cocoa, dusty rose -->
+<section class="r-soft" id="telas">
   <div class="wrap stack-lg">
-    <div class="split center">
-      <figure class="map stack">
-        <svg viewBox="0 0 520 560" role="img" aria-label="Esquema de la chaqueta con cinco zonas numeradas: visera, capucha, panel facial, manga y mano. Los ojos quedan descubiertos.">
-          <use href="#j-hood"></use>
-          <ellipse cx="260" cy="108" rx="38" ry="54" fill="#F2F1EE" stroke="#131312" stroke-width="1.5" stroke-dasharray="5 4"></ellipse>
-          <text x="260" y="114" text-anchor="middle" font-family="IBM Plex Mono, Menlo, monospace" font-size="12" fill="#131312">ojos</text>
-          <use href="#j-panel"></use>
-          <use href="#j-brim"></use>
-          <use href="#j-body"></use>
-          <use href="#j-hands"></use>
-          <g font-family="IBM Plex Mono, Menlo, monospace" font-size="14" font-weight="500" fill="#131312" text-anchor="middle">
-            <circle cx="260" cy="66" r="14" fill="#F2F1EE"></circle><text x="260" y="71">1</text>
-            <circle cx="208" cy="134" r="14" fill="#F2F1EE"></circle><text x="208" y="139">2</text>
-            <circle cx="260" cy="148" r="14" fill="#F2F1EE"></circle><text x="260" y="153">3</text>
-            <circle cx="138" cy="340" r="14" fill="#F2F1EE"></circle><text x="138" y="345">4</text>
-            <circle cx="102" cy="502" r="14" fill="#F2F1EE"></circle><text x="102" y="507">5</text>
+    <div class="split">
+      <h2 class="h2">No todas las telas con UPF protegen de la misma manera.</h2>
+      <p class="measure">El UPF indica cuánta radiación UV deja pasar una tela. No dice de dónde viene esa protección, y eso importa para saber cuánto puede durar con el uso.</p>
+    </div>
+    <div class="fabrics">
+      <article class="fabric">
+        <svg viewBox="0 0 150 96" role="img" aria-label="Hilos sin tratamiento, muy juntos">
+          <g fill="#634D3F">
+            <circle cx="25" cy="30" r="17"></circle><circle cx="60" cy="30" r="17"></circle><circle cx="95" cy="30" r="17"></circle><circle cx="130" cy="30" r="17"></circle>
+            <circle cx="42" cy="66" r="17"></circle><circle cx="77" cy="66" r="17"></circle><circle cx="112" cy="66" r="17"></circle>
           </g>
         </svg>
-        <figcaption class="note">IMG-03 · Esquema aproximado. La forma del panel facial y el ancho de la visera están sin confirmar.</figcaption>
+        <p class="label">Tipo 1</p>
+        <h3>Por tejido y color</h3>
+        <p>Una tela densa y oscura bloquea UV sin ningún tratamiento. Por eso buena parte de la ropa común protege bien,<sup><a href="#ref-4">4</a></sup> aunque nadie conoce su valor sin medirlo, y baja al estirarse.<sup><a href="#ref-8">8</a></sup></p>
+      </article>
+      <article class="fabric">
+        <svg viewBox="0 0 150 96" role="img" aria-label="Hilos con una capa de recubrimiento encima de la tela">
+          <path d="M4 22C24 2 42 2 60 14S98 2 116 8 140 14 148 22" fill="none" stroke="#634D3F" stroke-width="5" stroke-linecap="round"></path>
+          <g fill="#634D3F">
+            <circle cx="25" cy="42" r="15"></circle><circle cx="60" cy="42" r="15"></circle><circle cx="95" cy="42" r="15"></circle><circle cx="130" cy="42" r="15"></circle>
+            <circle cx="42" cy="76" r="15"></circle><circle cx="77" cy="76" r="15"></circle><circle cx="112" cy="76" r="15"></circle>
+          </g>
+        </svg>
+        <p class="label">Tipo 2</p>
+        <h3>Por acabado o recubrimiento</h3>
+        <p>El agente UV se aplica sobre la tela ya terminada. Es una vía habitual, pero la protección puede bajar con los lavados, según el agente.<sup><a href="#ref-12">12</a></sup></p>
+      </article>
+      <article class="fabric">
+        <svg viewBox="0 0 150 96" role="img" aria-label="Hilos con partículas minerales repartidas dentro de la fibra">
+          <g fill="#AE8A8A" stroke="#634D3F" stroke-width="1.5">
+            <circle cx="25" cy="30" r="17"></circle><circle cx="60" cy="30" r="17"></circle><circle cx="95" cy="30" r="17"></circle><circle cx="130" cy="30" r="17"></circle>
+            <circle cx="42" cy="66" r="17"></circle><circle cx="77" cy="66" r="17"></circle><circle cx="112" cy="66" r="17"></circle>
+          </g>
+          <g fill="#634D3F">
+            <circle cx="19" cy="25" r="2"></circle><circle cx="30" cy="34" r="2"></circle><circle cx="24" cy="39" r="2"></circle><circle cx="32" cy="22" r="2"></circle>
+            <circle cx="54" cy="25" r="2"></circle><circle cx="65" cy="34" r="2"></circle><circle cx="59" cy="39" r="2"></circle><circle cx="67" cy="22" r="2"></circle>
+            <circle cx="89" cy="25" r="2"></circle><circle cx="100" cy="34" r="2"></circle><circle cx="94" cy="39" r="2"></circle><circle cx="102" cy="22" r="2"></circle>
+            <circle cx="124" cy="25" r="2"></circle><circle cx="135" cy="34" r="2"></circle><circle cx="129" cy="39" r="2"></circle><circle cx="137" cy="22" r="2"></circle>
+            <circle cx="36" cy="61" r="2"></circle><circle cx="47" cy="70" r="2"></circle><circle cx="41" cy="75" r="2"></circle><circle cx="49" cy="58" r="2"></circle>
+            <circle cx="71" cy="61" r="2"></circle><circle cx="82" cy="70" r="2"></circle><circle cx="76" cy="75" r="2"></circle><circle cx="84" cy="58" r="2"></circle>
+            <circle cx="106" cy="61" r="2"></circle><circle cx="117" cy="70" r="2"></circle><circle cx="111" cy="75" r="2"></circle><circle cx="119" cy="58" r="2"></circle>
+          </g>
+        </svg>
+        <p class="label">Tipo 3 · Esta chaqueta</p>
+        <h3>En el propio hilo</h3>
+        <p>Partículas minerales que bloquean UV, como el dióxido de titanio, se incorporan a la fibra al hilarla, antes de tejer. La protección queda dentro del hilo y no sobre la superficie. <span class="tbc">[CONFIRMAR CON EL FABRICANTE: COMPOSICIÓN Y DIÓXIDO DE TITANIO]</span> Falta medir cuánto se mantiene tras 40 lavados.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- DATA + COLOURS · cocoa, ivory, oatmeal -->
+<section class="r-dark" id="datos">
+  <div class="wrap stack-lg">
+    <div class="split">
+      <div class="stack">
+        <h2 class="h2">Lo que ya está medido.</h2>
+        <hr class="dash">
+      </div>
+      <p class="measure">Informe de un laboratorio externo acreditado, julio de 2026, según la norma GB/T 18830-2009. Una sola prenda, tela principal, color azul. <span class="tbc">[CONFIRMAR QUE EL INFORME CORRESPONDE A ESTA CHAQUETA]</span> Más detalle a solicitud.</p>
+    </div>
+
+    <div class="figures">
+      <div class="figure"><strong>UPF 50+</strong><p>Valor medido: 121. La norma pide más de 40.</p></div>
+      <div class="figure"><strong>0,83 %</strong><p>UVA que atraviesa la tela, en promedio. La norma pide menos de 5 %.</p></div>
+      <div class="figure"><strong>0,66 %</strong><p>UVB que atraviesa la tela, en promedio.</p></div>
+    </div>
+
+    <div class="split">
+      <div class="stack">
+        <h3 class="h3">En contacto con la piel</h3>
+        <ul class="list">
+          <li><b>Formaldehído:</b> no detectado (límite de detección 20 mg/kg; máximo permitido 75).</li>
+          <li><b>pH:</b> 6,5 (permitido 4,0–8,5).</li>
+          <li><b>Aminas aromáticas prohibidas:</b> no detectadas.</li>
+          <li><b>Solidez del color al agua, al sudor y al frote seco:</b> 4–5 (mínimo 3).</li>
+        </ul>
+        <p class="small">Norma GB 18401-2010, clase B: prendas en contacto directo con la piel.</p>
+      </div>
+      <div class="stack">
+        <h3 class="h3">Lo que falta medir</h3>
+        <ul class="list">
+          <li><b>Luz visible y azul:</b> el UPF llega solo hasta 400 nm.<sup><a href="#ref-4">4</a></sup> En otras prendas, los tonos claros dejaron pasar bastante más que los oscuros.<sup><a href="#ref-4">4</a>,<a href="#ref-5">5</a></sup></li>
+          <li><b>Durabilidad:</b> tras 40 lavados, tela húmeda y tela estirada.<sup><a href="#ref-8">8</a></sup></li>
+          <li><b>Otras telas:</b> panel facial, malla y visera.</li>
+          <li><b>Cada color:</b> ninguno de los cuatro de abajo está medido todavía.</li>
+          <li><b>Comodidad:</b> paso de aire y resistencia al vapor.</li>
+        </ul>
+        <p class="small">Para la luz visible aún no hay un umbral biológico establecido.<sup><a href="#ref-4">4</a></sup> Reportamos la medición; no prometemos un resultado clínico.</p>
+      </div>
+    </div>
+
+    <div class="stack" id="colores">
+      <h3 class="h3">Cuatro colores, por medir uno a uno.</h3>
+      <div class="colours">
+        <figure class="colour"><img src="img/jacket-olive.webp" width="1004" height="1580" loading="lazy" alt="Chaqueta color olivo"><figcaption>Olivo</figcaption></figure>
+        <figure class="colour"><img src="img/jacket-sand.webp" width="1004" height="1580" loading="lazy" alt="Chaqueta color arena"><figcaption>Arena</figcaption></figure>
+        <figure class="colour"><img src="img/jacket-sage.webp" width="1004" height="1580" loading="lazy" alt="Chaqueta color salvia"><figcaption>Salvia</figcaption></figure>
+        <figure class="colour"><img src="img/jacket-grey.webp" width="1004" height="1580" loading="lazy" alt="Chaqueta color gris claro"><figcaption>Gris claro</figcaption></figure>
+      </div>
+      <p class="small">Nombres provisionales. <span class="tbc">[COLORES FINALES SEGÚN LA MEDICIÓN]</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- COVERAGE · ivory, burgundy, olive -->
+<section class="r-standard" id="cobertura">
+  <div class="wrap stack-lg">
+    <div class="split center">
+      <figure class="pins">
+        <img src="img/jacket-olive.webp" width="1004" height="1580" loading="lazy" alt="Chaqueta con cinco zonas numeradas: visera, capucha, panel facial, manga y puño">
+        <span class="pin p1" aria-hidden="true">1</span>
+        <span class="pin p2" aria-hidden="true">2</span>
+        <span class="pin p3" aria-hidden="true">3</span>
+        <span class="pin p4" aria-hidden="true">4</span>
+        <span class="pin p5" aria-hidden="true">5</span>
       </figure>
       <div class="stack">
         <h2 class="h2">Cubre lo que más se olvida.</h2>
+        <hr class="dash">
         <p class="measure">Cada detalle responde a una zona concreta. El corte es holgado <span class="tbc">[CONFIRMAR]</span>, porque la tela estirada protege menos.<sup><a href="#ref-5">5</a>,<a href="#ref-8">8</a></sup></p>
         <ol class="zones">
           <li><span class="n">1</span><span><b>Visera ancha y desmontable</b><br>Frente y sienes. Da sombra; no es un filtro.<sup><a href="#ref-7">7</a></sup></span></li>
           <li><span class="n">2</span><span><b>Capucha</b><br>Orejas, nuca y lados del cuello.</span></li>
-          <li><span class="n">3</span><span><b>Panel facial</b> <span class="tbc">[CONFIRMAR FORMA]</span><br>Parte inferior del rostro. Su tela es perforada, así que se mide aparte.</span></li>
+          <li><span class="n">3</span><span><b>Panel facial con cremallera</b><br>Nariz, boca y mentón. Tiene zonas perforadas, así que se medirá aparte.</span></li>
           <li><span class="n">4</span><span><b>Manga larga y holgada</b><br>Brazo y antebrazo, sin que la tela se estire sobre la piel.</span></li>
-          <li><span class="n">5</span><span><b>Manga que se extiende sobre la mano</b> <span class="tbc">[CONFIRMAR]</span><br>Dorso de la mano y dedos.</span></li>
+          <li><span class="n">5</span><span><b>Puño largo con abertura para el pulgar</b><br>Dorso de la mano.</span></li>
         </ol>
-        <p class="caveat"><b>Lo que no cubre:</b> los ojos y la piel que los rodea. Además, la sombra de la visera no detiene la luz difusa ni la reflejada.<sup><a href="#ref-7">7</a></sup> La chaqueta complementa el protector solar, también en el rostro; no lo reemplaza.</p>
+        <p class="caveat"><b>Lo que no cubre:</b> los ojos y la piel que los rodea. Además, la sombra de la visera no detiene la luz difusa ni la reflejada.<sup><a href="#ref-7">7</a></sup></p>
       </div>
     </div>
 
     <div class="stack-lg levels-block" id="niveles">
-      <div class="levels-head">
-        <h3 class="h3">Una chaqueta, tres niveles de cobertura.</h3>
-        <p class="measure">El paciente añade solo lo que necesita, y usted puede recomendarle un nivel concreto.</p>
-      </div>
+      <h3 class="h3">Una chaqueta, tres niveles de cobertura.</h3>
       <div class="levels">
         <div class="level">
-          <svg viewBox="0 0 520 560" role="img" aria-label="Nivel 1: chaqueta con la capucha abajo, sin visera">
+          <svg viewBox="40 20 440 530" role="img" aria-label="Nivel 1: chaqueta con la capucha abajo, sin visera">
             <use href="#j-hood-down"></use>
             <use href="#j-body"></use>
-            <ellipse cx="260" cy="176" rx="36" ry="12" fill="#2A2D23"></ellipse>
+            <ellipse cx="260" cy="176" rx="36" ry="11" fill="#EBE3D0"></ellipse>
             <use href="#j-cuffs"></use>
           </svg>
-          <p class="mono">Nivel 1 · Uso diario</p>
+          <p class="label">Nivel 1 · Uso diario</p>
           <p>Capucha abajo, sin visera. Cubre torso, brazos y antebrazos.</p>
         </div>
         <div class="level">
-          <svg viewBox="0 0 520 560" role="img" aria-label="Nivel 2: capucha puesta, con visera y manos cubiertas">
+          <svg viewBox="40 20 440 530" role="img" aria-label="Nivel 2: capucha puesta, con visera y dorso de las manos cubierto">
             <use href="#j-hood"></use>
-            <ellipse cx="260" cy="108" rx="38" ry="54" fill="#F2F1EE" stroke="#131312" stroke-width="1.5" stroke-dasharray="5 4"></ellipse>
+            <use href="#j-face"></use>
             <use href="#j-brim"></use>
             <use href="#j-body"></use>
             <use href="#j-hands"></use>
           </svg>
-          <p class="mono">Nivel 2 · Sol directo</p>
-          <p>Capucha y visera puestas, manos cubiertas. Suma orejas, nuca, lados del cuello y manos, y da sombra a frente y sienes.</p>
+          <p class="label">Nivel 2 · Sol directo</p>
+          <p>Capucha y visera puestas, puño sobre la mano. Suma orejas, nuca, lados del cuello y dorso de la mano, y da sombra a frente y sienes.</p>
         </div>
         <div class="level">
-          <svg viewBox="0 0 520 560" role="img" aria-label="Nivel 3: capucha, visera, manos cubiertas y panel facial">
+          <svg viewBox="40 20 440 530" role="img" aria-label="Nivel 3: capucha, visera, manos y panel facial cerrado">
             <use href="#j-hood"></use>
-            <ellipse cx="260" cy="108" rx="38" ry="54" fill="#F2F1EE" stroke="#131312" stroke-width="1.5" stroke-dasharray="5 4"></ellipse>
+            <use href="#j-face"></use>
             <use href="#j-panel"></use>
             <use href="#j-brim"></use>
             <use href="#j-body"></use>
             <use href="#j-hands"></use>
           </svg>
-          <p class="mono">Nivel 3 · Exposición prolongada</p>
-          <p>Se suma el panel facial. <span class="tbc">[CONFIRMAR QUE SE QUITA]</span></p>
+          <p class="label">Nivel 3 · Exposición prolongada</p>
+          <p>Se sube la cremallera del panel facial hasta la nariz.</p>
         </div>
       </div>
-      <p class="note">IMG-10 · Foto pendiente: misma persona, misma pose, tres estados. Ilustraciones provisionales.</p>
     </div>
   </div>
 </section>
 
-<!-- DATA -->
-<section id="datos">
-  <div class="wrap stack-lg">
-    <div class="split">
-      <h2 class="h2">Los datos, color por color y tela por tela.</h2>
-      <div class="stack">
-        <p>El UPF describe solo el ultravioleta, hasta 400 nm. La luz visible queda fuera de ese número. En un estudio de 2026 con 37 prendas, varias blancas con UPF alto protegieron poco frente a la luz visible.<sup><a href="#ref-4">4</a></sup> En Brasil, una camiseta blanca de algodón dejó pasar 42 % de la luz visible y 27 % de la azul-violeta; las prendas oscuras, casi nada.<sup><a href="#ref-5">5</a></sup></p>
-        <p>Por eso publicamos la curva completa, de 290 a 800 nm, para cada color que ofrecemos. Y medimos cada tela por separado, porque la chaqueta no está hecha de una sola: la malla y el panel facial tienen orificios, y un orificio deja pasar todas las longitudes de onda por igual.</p>
-      </div>
-    </div>
-
-    <figure class="stack">
-      <div class="chart-box" tabindex="0" role="group" aria-label="Gráfica de transmitancia">
-        <svg viewBox="0 0 720 300" role="img" aria-label="Gráfica vacía de transmitancia de 0 a 100 por ciento frente a longitud de onda de 290 a 800 nanómetros. Datos de laboratorio pendientes.">
-          <rect x="60" y="30" width="31.4" height="220" fill="#D6D5D1"></rect>
-          <rect x="91.4" y="30" width="106.6" height="220" fill="#E3E2DE"></rect>
-          <rect x="198" y="30" width="86.6" height="220" fill="#D6D5D1"></rect>
-          <rect x="284.6" y="30" width="415.4" height="220" fill="#E9E8E4"></rect>
-          <g stroke="#A5A49F" stroke-width="1">
-            <line x1="60" y1="30" x2="700" y2="30"></line>
-            <line x1="60" y1="85" x2="700" y2="85"></line>
-            <line x1="60" y1="140" x2="700" y2="140"></line>
-            <line x1="60" y1="195" x2="700" y2="195"></line>
-          </g>
-          <line x1="60" y1="250" x2="700" y2="250" stroke="#131312" stroke-width="1"></line>
-          <g font-size="11" fill="#454542" text-anchor="end">
-            <text x="52" y="34">100</text><text x="52" y="89">75</text><text x="52" y="144">50</text><text x="52" y="199">25</text><text x="52" y="254">0</text>
-          </g>
-          <g font-size="11" fill="#131312" text-anchor="middle">
-            <text x="75.7" y="22">UVB</text><text x="144.7" y="22">UVA</text><text x="241.3" y="22">Luz azul</text><text x="492.3" y="22">Resto del visible</text>
-          </g>
-          <g font-size="11" fill="#454542" text-anchor="middle">
-            <text x="60" y="268">290</text><text x="91.4" y="268">315</text><text x="198" y="268">400</text><text x="284.6" y="268">469</text><text x="700" y="268">800</text>
-            <text x="380" y="290">Longitud de onda (nm)</text>
-            <text x="16" y="140" transform="rotate(-90 16 140)">Transmitancia (%)</text>
-          </g>
-          <g font-size="13" fill="#131312" text-anchor="middle">
-            <text x="400" y="136">Sin datos todavía: aquí va la curva real</text>
-            <text x="400" y="154">del laboratorio, una línea por color y por tela.</text>
-          </g>
-        </svg>
-      </div>
-      <figcaption class="note">IMG-04 · Solo con datos reales de laboratorio.</figcaption>
-    </figure>
-
-    <div class="stack">
-      <div class="table-box" tabindex="0" role="group" aria-label="Tabla de mediciones por tela">
-        <table>
-          <thead>
-            <tr><th scope="col">Medición</th><th scope="col">Cuerpo</th><th scope="col">Visera</th><th scope="col">Panel facial</th><th scope="col">Malla</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>UPF <span class="mono">290–400 nm</span></td><td><span class="tbc">[LAB]</span></td><td><span class="tbc">[LAB]</span></td><td><span class="tbc">[LAB]</span></td><td><span class="tbc">[LAB]</span></td></tr>
-            <tr><td>UVA <span class="mono">315–400 nm</span></td><td><span class="tbc">[LAB]</span></td><td><span class="tbc">[LAB]</span></td><td><span class="tbc">[LAB]</span></td><td><span class="tbc">[LAB]</span></td></tr>
-            <tr><td>Luz azul <span class="mono">400–469 nm</span></td><td><span class="tbc">[LAB]</span></td><td><span class="tbc">[LAB]</span></td><td><span class="tbc">[LAB]</span></td><td><span class="tbc">[LAB]</span></td></tr>
-            <tr><td>Luz visible <span class="mono">400–800 nm</span></td><td><span class="tbc">[LAB]</span></td><td><span class="tbc">[LAB]</span></td><td><span class="tbc">[LAB]</span></td><td><span class="tbc">[LAB]</span></td></tr>
-            <tr><td>Tras 40 lavados</td><td><span class="tbc">[LAB]</span></td><td>—</td><td><span class="tbc">[LAB]</span></td><td><span class="tbc">[LAB]</span></td></tr>
-            <tr><td>Tela húmeda</td><td><span class="tbc">[LAB]</span></td><td>—</td><td><span class="tbc">[LAB]</span></td><td><span class="tbc">[LAB]</span></td></tr>
-            <tr><td>Tela estirada</td><td><span class="tbc">[LAB]</span></td><td>—</td><td><span class="tbc">[LAB]</span></td><td><span class="tbc">[LAB]</span></td></tr>
-            <tr><td>Paso de aire</td><td><span class="tbc">[LAB]</span></td><td>—</td><td><span class="tbc">[LAB]</span></td><td><span class="tbc">[LAB]</span></td></tr>
-            <tr><td>Resistencia al vapor</td><td><span class="tbc">[LAB]</span></td><td>—</td><td><span class="tbc">[LAB]</span></td><td><span class="tbc">[LAB]</span></td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="small">Laboratorio <span class="tbc">[NOMBRE · NORMA]</span> · Fecha <span class="tbc">[FECHA]</span> · Color <span class="tbc">[COLOR]</span> · — no aplica</p>
-      <p class="small">Para la luz visible aún no hay un umbral biológico establecido.<sup><a href="#ref-4">4</a></sup> Reportamos la medición; no prometemos un resultado clínico.</p>
-    </div>
-
-    <div class="macro-grid">
-      <div class="ph macro"><span>IMG-05a · Foto pendiente: macro de la tela principal, 20–50×, con barra de escala.</span></div>
-      <div class="ph macro"><span>IMG-05b · Foto pendiente: macro de la tela perforada, a la misma escala.</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- DAILY WEAR -->
-<section class="ruled">
+<!-- DAILY WEAR · ivory, burgundy, olive -->
+<section class="r-standard">
   <div class="wrap stack-lg">
     <div class="split">
       <h2 class="h2">Para llevarla todos los días.</h2>
       <div class="stack">
-        <p>Una prenda para el trayecto al trabajo, el colegio o el parque. Sin la visera, es una chaqueta liviana con capucha. <span class="tbc">[CONFIRMAR CON MUESTRA]</span> Para clima cálido: <span class="tbc">[DATO DE TRANSPIRABILIDAD]</span></p>
-        <p class="specs">Tela <span class="tbc">[g/m²]</span> · Composición <span class="tbc">[%]</span> · Colores <span class="tbc">[N]</span> · Tallas <span class="tbc">[XS–XL]</span> · Altura del cuello <span class="tbc">[cm]</span> · Corte de mujer y de hombre <span class="tbc">[CONFIRMAR]</span></p>
+        <p>Una prenda para el trayecto al trabajo, el colegio o el parque. Sin la visera, es una chaqueta liviana con capucha. Para clima cálido: <span class="tbc">[DATO DE TRANSPIRABILIDAD]</span></p>
+        <p class="small">Tela <span class="tbc">[g/m²]</span> · Composición <span class="tbc">[%]</span> · Tallas <span class="tbc">[XS–XL]</span> · Corte de mujer y de hombre <span class="tbc">[CONFIRMAR]</span></p>
       </div>
     </div>
-    <div class="ph street lit"><span>IMG-02 · Foto pendiente: mujer de unos 40 años caminando por una calle de ciudad con luz nublada y clara, capucha y visera puestas, sin panel facial.</span></div>
-    <p class="note">IMG-06a–f · Ilustraciones provisionales. Las fotos de la prenda real llegarán con la muestra.</p>
     <div class="details">
       <figure class="detail">
         <svg viewBox="0 0 400 300" role="img" aria-label="Capucha de perfil con visera ancha unida por una cremallera">
-          <path d="M240 36C306 32 350 82 350 148 350 198 334 234 304 258L372 300H104L170 258C160 216 158 168 168 126 178 82 200 40 240 36Z" fill="#4A5040"></path>
-          <path d="M176 104C196 138 200 204 180 256 164 216 160 150 176 104Z" fill="#20231B"></path>
-          <path d="M180 92 92 124C78 130 80 146 94 146L172 150Z" fill="#32372A"></path>
-          <path d="M156 104 150 148M130 113 122 147M106 122 98 146" fill="none" stroke="#7C8270" stroke-width="1.5"></path>
-          <path d="M180 92 172 150" fill="none" stroke="#DEDDD9" stroke-width="2.5" stroke-dasharray="3 3"></path>
-          <rect x="167" y="148" width="10" height="22" rx="3" fill="#DEDDD9"></rect>
+          <path d="M240 36C306 32 350 82 350 148 350 198 334 234 304 258L372 300H104L170 258C160 216 158 168 168 126 178 82 200 40 240 36Z" fill="#565A2E"></path>
+          <path d="M176 104C196 138 200 204 180 256 164 216 160 150 176 104Z" fill="#EBE3D0"></path>
+          <path d="M180 92 92 124C78 130 80 146 94 146L172 150Z" fill="#565A2E"></path>
+          <path d="M156 104 150 148M130 113 122 147M106 122 98 146" fill="none" stroke="#EBE3D0" stroke-width="1.5"></path>
+          <path d="M180 92 172 150" fill="none" stroke="#EBE3D0" stroke-width="2.5" stroke-dasharray="3 3"></path>
         </svg>
-        <figcaption><b>Visera desmontable.</b> Se une a la capucha con cremallera. Sin ella, queda una capucha normal. <span class="tbc">[CONFIRMAR]</span></figcaption>
+        <figcaption><b>Visera desmontable.</b> Se quita con una cremallera y queda una capucha sencilla.</figcaption>
       </figure>
       <figure class="detail">
-        <svg viewBox="0 0 400 300" role="img" aria-label="Manga que continúa más allá de la muñeca y cubre la mano, con una abertura lateral">
-          <path d="M0 74 168 92V212L0 230Z" fill="#4A5040"></path>
-          <path d="M168 92 306 104C356 110 384 132 384 156 384 180 356 200 306 204L168 212Z" fill="#3C4133"></path>
-          <path d="M168 92V212" fill="none" stroke="#20231B" stroke-width="3"></path>
-          <path d="M150 100V204M136 98V206M122 96V208" fill="none" stroke="#2F3328" stroke-width="1.5"></path>
-          <path d="M196 180 282 186" fill="none" stroke="#DEDDD9" stroke-width="2" stroke-dasharray="4 3"></path>
-          <path d="M196 172V188M282 178V194" fill="none" stroke="#DEDDD9" stroke-width="2.5"></path>
+        <svg viewBox="0 0 400 300" role="img" aria-label="Puño largo que cubre el dorso de la mano, con el pulgar saliendo por una abertura y los dedos libres">
+          <path d="M0 80 180 96V204L0 220Z" fill="#565A2E"></path>
+          <path d="M180 96 300 110 300 196 180 204Z" fill="#565A2E"></path>
+          <path d="M180 96V204M150 94V206M136 92V208" fill="none" stroke="#EBE3D0" stroke-width="1.5"></path>
+          <g fill="none" stroke="#565A2E" stroke-width="3">
+            <rect x="298" y="112" width="74" height="19" rx="9.5"></rect>
+            <rect x="298" y="133" width="88" height="19" rx="9.5"></rect>
+            <rect x="298" y="154" width="80" height="19" rx="9.5"></rect>
+            <rect x="298" y="175" width="62" height="19" rx="9.5"></rect>
+          </g>
+          <path d="M226 196C220 226 232 262 254 262 272 262 270 226 262 196Z" fill="#EBE3D0" stroke="#565A2E" stroke-width="3"></path>
         </svg>
-        <figcaption><b>Manga sobre la mano.</b> Se extiende hasta cubrir el dorso y los dedos; la mano sale por una abertura. <span class="tbc">[CONFIRMAR]</span></figcaption>
+        <figcaption><b>Puño con abertura para el pulgar.</b> Cubre el dorso de la mano y deja los dedos libres.</figcaption>
       </figure>
       <figure class="detail">
         <svg viewBox="0 0 400 300" role="img" aria-label="Parte posterior de la capucha con una abertura vertical con cremallera">
-          <path d="M200 22C282 22 324 92 316 174 312 216 296 246 276 262L344 300H56L124 262C104 246 88 216 84 174 76 92 118 22 200 22Z" fill="#4A5040"></path>
-          <path d="M200 92C222 128 222 178 200 214 178 178 178 128 200 92Z" fill="#20231B"></path>
-          <path d="M200 92C222 128 222 178 200 214 178 178 178 128 200 92Z" fill="none" stroke="#7C8270" stroke-width="1.5" stroke-dasharray="3 3"></path>
-          <rect x="195" y="214" width="10" height="24" rx="3" fill="#DEDDD9"></rect>
+          <path d="M200 22C282 22 324 92 316 174 312 216 296 246 276 262L344 300H56L124 262C104 246 88 216 84 174 76 92 118 22 200 22Z" fill="#565A2E"></path>
+          <path d="M200 74V190" fill="none" stroke="#EBE3D0" stroke-width="3" stroke-dasharray="4 3"></path>
+          <rect x="195" y="190" width="10" height="24" rx="3" fill="#EBE3D0"></rect>
+          <path d="M200 112C232 124 252 160 248 206 246 232 238 250 226 262 220 232 212 190 200 148Z" fill="#EBE3D0" stroke="#565A2E" stroke-width="2"></path>
         </svg>
-        <figcaption><b>Abertura para la cola de caballo.</b> Detrás de la capucha, con cremallera, para que el pelo recogido no sea motivo para dejarla abajo. <span class="tbc">[CONFIRMAR CORTE]</span></figcaption>
+        <figcaption><b>Abertura para la cola de caballo.</b> Detrás de la capucha, con cremallera, para que el pelo recogido no sea motivo para dejarla abajo.</figcaption>
       </figure>
       <figure class="detail">
-        <svg viewBox="0 0 400 300" role="img" aria-label="Capucha de frente con un panel de tela perforada sobre la parte inferior del rostro">
-          <path d="M200 14C284 14 328 86 318 172 314 214 298 244 280 260L344 300H56L120 260C102 244 86 214 82 172 72 86 116 14 200 14Z" fill="#4A5040"></path>
-          <ellipse cx="200" cy="138" rx="74" ry="104" fill="#F2F1EE"></ellipse>
-          <path d="M126.1 142C164 166 236 166 273.9 142A74 104 0 0 1 126.1 142Z" fill="url(#perf-lg)"></path>
+        <svg viewBox="0 0 400 300" role="img" aria-label="Capucha de frente con panel facial cerrado con cremallera hasta la nariz">
+          <path d="M200 14C284 14 328 86 318 172 314 214 298 244 280 260L344 300H56L120 260C102 244 86 214 82 172 72 86 116 14 200 14Z" fill="#565A2E"></path>
+          <ellipse cx="200" cy="138" rx="74" ry="104" fill="#EBE3D0"></ellipse>
+          <path d="M126.5 126C164 150 236 150 273.5 126A74 104 0 1 1 126.5 126Z" fill="url(#perf-lg)"></path>
+          <path d="M200 144V300" fill="none" stroke="#EBE3D0" stroke-width="2.5"></path>
         </svg>
-        <figcaption><b>Panel facial.</b> Tela perforada. Su medición se publica aparte, sea cual sea el resultado. <span class="tbc">[CONFIRMAR FORMA Y CAPAS]</span></figcaption>
+        <figcaption><b>Panel facial.</b> Sube con la cremallera y cubre nariz, boca y mentón. Su medición se publicará aparte, sea cual sea el resultado. <span class="tbc">[CONFIRMAR CAPAS]</span></figcaption>
       </figure>
       <figure class="detail">
         <svg viewBox="0 0 400 300" role="img" aria-label="Unión entre la tela lisa de la chaqueta y un panel de malla perforada">
-          <rect width="400" height="300" fill="#4A5040"></rect>
+          <rect width="400" height="300" fill="#565A2E"></rect>
           <path d="M0 246C110 226 250 150 400 56V300H0Z" fill="url(#perf-lg)"></path>
-          <path d="M0 246C110 226 250 150 400 56" fill="none" stroke="#DEDDD9" stroke-width="2" stroke-dasharray="4 3"></path>
+          <path d="M0 246C110 226 250 150 400 56" fill="none" stroke="#EBE3D0" stroke-width="2" stroke-dasharray="4 3"></path>
         </svg>
-        <figcaption><b>Malla de ventilación.</b> Por sus orificios puede pasar más luz que por la tela principal; por eso se mide aparte. Ubicación: <span class="tbc">[CONFIRMAR]</span></figcaption>
+        <figcaption><b>Malla en los costados.</b> Ventila, pero por sus orificios puede pasar más luz que por la tela principal; por eso se medirá aparte.</figcaption>
       </figure>
       <figure class="detail">
         <svg viewBox="0 0 400 300" role="img" aria-label="Bolsillo diagonal con cremallera">
-          <rect width="400" height="300" fill="#4A5040"></rect>
-          <path d="M120 56C150 116 230 196 286 226 262 150 196 86 120 56Z" fill="#20231B"></path>
-          <path d="M120 56C150 116 230 196 286 226M120 56C196 86 262 150 286 226" fill="none" stroke="#7C8270" stroke-width="2" stroke-dasharray="3 3"></path>
-          <rect x="282" y="222" width="10" height="26" rx="3" transform="rotate(-30 287 235)" fill="#DEDDD9"></rect>
+          <rect width="400" height="300" fill="#565A2E"></rect>
+          <path d="M120 56 286 226" fill="none" stroke="#EBE3D0" stroke-width="3" stroke-dasharray="4 3"></path>
+          <rect x="280" y="222" width="10" height="28" rx="3" transform="rotate(-44 285 236)" fill="#EBE3D0"></rect>
         </svg>
         <figcaption><b>Bolsillos con cremallera.</b> Para el teléfono y las llaves, con las manos libres.</figcaption>
       </figure>
@@ -353,30 +421,34 @@
   </div>
 </section>
 
-<!-- QUESTIONS -->
-<section class="tinted" id="preguntas">
+<!-- QUESTIONS · oatmeal panel, burgundy -->
+<section class="r-panel" id="preguntas">
   <div class="wrap stack-lg">
     <h2 class="h2">Lo que probablemente se está preguntando.</h2>
     <div class="qa">
       <div>
         <h3>¿Reemplaza el protector solar?</h3>
-        <p>No. Protege la piel que cubre. La visera da sombra, pero no filtra, así que el rostro y cualquier otra zona expuesta siguen necesitando protector solar.</p>
+        <p>No. Es un complemento. Reduce la superficie de piel que depende del protector solar, pero el rostro y cualquier otra zona expuesta lo siguen necesitando.</p>
+      </div>
+      <div>
+        <h3>¿Permite usar menos protector solar?</h3>
+        <p>La piel bien cubierta depende menos de él. Eso no cambia nada en la piel expuesta, donde la cantidad y la reaplicación siguen importando igual.<sup><a href="#ref-2">2</a></sup></p>
       </div>
       <div>
         <h3>¿Y el rostro?</h3>
-        <p>En un estudio de modelado, ningún sombrero protegió por completo ninguna zona del rostro: el máximo fue 76 %, limitado sobre todo por la radiación UV difusa, y el ala más ancha dejó de aportar ventaja hacia el mediodía.<sup><a href="#ref-7">7</a></sup> El panel facial cubre la parte inferior <span class="tbc">[CONFIRMAR]</span> con tela perforada, y su transmisión se publica aparte. <span class="tbc">[LAB]</span> No hacemos afirmaciones sobre melasma ni sobre ninguna otra condición.</p>
+        <p>En un estudio de modelado, ningún sombrero protegió por completo ninguna zona del rostro: el máximo fue 76 %, limitado sobre todo por la radiación UV difusa, y el ala más ancha dejó de aportar ventaja hacia el mediodía.<sup><a href="#ref-7">7</a></sup> El panel facial cubre nariz, boca y mentón con zonas perforadas, y su transmisión se medirá aparte. No hacemos afirmaciones sobre melasma ni sobre ninguna otra condición.</p>
       </div>
       <div>
         <h3>¿Por qué no una camisa oscura de manga larga?</h3>
-        <p>Para muchos pacientes puede bastar en los brazos: buena parte de la ropa común protege bien frente al UV.<sup><a href="#ref-4">4</a></sup> La diferencia está en dos cosas: el dato de cada color, porque sin medirla nadie sabe el UPF de una prenda,<sup><a href="#ref-4">4</a></sup> y la cobertura que una camisa no da: capucha, visera, manos y panel facial.</p>
+        <p>Para muchos pacientes puede bastar en los brazos: buena parte de la ropa común protege bien frente al UV.<sup><a href="#ref-4">4</a></sup> La diferencia está en dos cosas: tener el dato medido, porque sin medirla nadie sabe el UPF de una prenda,<sup><a href="#ref-4">4</a></sup> y la cobertura que una camisa no da: capucha, visera, dorso de la mano y panel facial.</p>
       </div>
       <div>
         <h3>¿Las zonas perforadas dejan pasar luz?</h3>
-        <p>Probablemente más que la tela principal. Por un orificio pasa todo el espectro por igual, y ni el tinte ni el acabado lo corrigen. Por eso medimos la malla y el panel facial por separado, y publicamos el resultado aunque sea peor. <span class="tbc">[LAB]</span></p>
+        <p>Probablemente más que la tela principal. Por un orificio pasa todo el espectro por igual, y ni el tinte ni el acabado lo corrigen. Por eso la malla y el panel facial se medirán por separado, y publicaremos el resultado aunque sea peor.</p>
       </div>
       <div>
         <h3>¿Y el calor?</h3>
-        <p>En una encuesta por internet, 35 % de las mujeres con melasma refirió que el calor lo empeoraba.<sup><a href="#ref-9">9</a></sup> Por eso publicamos el paso de aire y la resistencia al vapor de cada tela. <span class="tbc">[LAB]</span> No afirmamos que la chaqueta refresque.</p>
+        <p>En una encuesta por internet, 35 % de las mujeres con melasma refirió que el calor lo empeoraba.<sup><a href="#ref-9">9</a></sup> Por eso medimos también el paso de aire y la resistencia al vapor de cada tela. <span class="tbc">[PENDIENTE]</span> No afirmamos que la chaqueta refresque.</p>
       </div>
       <div>
         <h3>¿Es un dispositivo médico?</h3>
@@ -384,11 +456,7 @@
       </div>
       <div>
         <h3>¿Cuánto dura la protección?</h3>
-        <p>Medimos la tela nueva y tras 40 lavados. <span class="tbc">[RESULTADO]</span> Como referencia general, la ropa de protección solar dura de 1 a 2 años con uso normal.<sup><a href="#ref-6">6</a></sup></p>
-      </div>
-      <div>
-        <h3>¿Qué implica unirme a la lista?</h3>
-        <p>Recibe la información y, si quiere, una prenda para evaluarla. No pedimos pago ni compromiso, y no pagamos por recomendaciones. <span class="tbc">[CONFIRMAR]</span></p>
+        <p>Aún no tenemos la medición tras 40 lavados. <span class="tbc">[PENDIENTE]</span> Como referencia general, la ropa de protección solar dura de 1 a 2 años con uso normal.<sup><a href="#ref-6">6</a></sup></p>
       </div>
       <div>
         <h3>¿Quién está detrás?</h3>
@@ -398,51 +466,20 @@
   </div>
 </section>
 
-<!-- WAITING LIST -->
-<section class="waitlist" id="lista">
+<!-- CONTACT · burgundy, ivory -->
+<section class="r-contact" id="contacto">
   <div class="wrap split">
     <div class="stack">
-      <h2 class="h2">Lista de espera para dermatólogos</h2>
-      <p>Primera ronda de evaluación: <span class="tbc">[N]</span> prendas.</p>
-      <ul class="gets">
-        <li>La ficha técnica y el informe de laboratorio completos.</li>
-        <li>Una prenda para que la evalúe personalmente, según disponibilidad.</li>
-        <li>Aviso antes de que esté disponible para pacientes.</li>
-      </ul>
-      <div class="ph kit"><span>IMG-08 · Foto pendiente: la chaqueta doblada en una caja sencilla, la visera al lado, la ficha técnica y una tarjeta.</span></div>
-      <p>¿Prefiere escribirnos? Le responde <span class="tbc">[NOMBRE]</span> por WhatsApp <span class="tbc">[NÚMERO]</span> o en <span class="tbc">[CORREO]</span></p>
+      <h2 class="h2">Escríbanos.</h2>
+      <hr class="dash">
+      <p class="measure">¿Quiere más información sobre la tela o resolver una duda? Déjenos su correo y su solicitud, y le responderá una persona.</p>
     </div>
-    <form aria-label="Formulario de lista de espera (de muestra, no envía datos)">
-      <p class="inactive">Formulario de muestra: en este borrador no se envía ni se guarda nada.</p>
-      <div><label class="lab" for="f-name">Nombre y apellidos</label><input class="field" id="f-name" type="text" autocomplete="off"></div>
-      <div class="two">
-        <div><label class="lab" for="f-spec">Especialidad</label>
-          <select class="field" id="f-spec">
-            <option value="">Seleccione</option>
-            <option>Dermatología</option>
-            <option>Cirugía dermatológica</option>
-            <option>Medicina estética</option>
-            <option>Otra</option>
-          </select>
-        </div>
-        <div><label class="lab" for="f-city">Ciudad</label><input class="field" id="f-city" type="text" autocomplete="off"></div>
-      </div>
-      <div><label class="lab" for="f-clinic">Consultorio o clínica (opcional)</label><input class="field" id="f-clinic" type="text" autocomplete="off"></div>
-      <div class="two">
-        <div><label class="lab" for="f-mail">Correo</label><input class="field" id="f-mail" type="email" autocomplete="off"></div>
-        <div><label class="lab" for="f-wa">WhatsApp</label><input class="field" id="f-wa" type="tel" autocomplete="off"></div>
-      </div>
-      <fieldset>
-        <legend>¿Qué le interesa?</legend>
-        <label class="check" for="f-i1"><input id="f-i1" type="checkbox">Recibir la ficha técnica y el informe</label>
-        <label class="check" for="f-i2"><input id="f-i2" type="checkbox">Evaluar una prenda personalmente</label>
-        <label class="check" for="f-i3"><input id="f-i3" type="checkbox">Saber cuándo esté disponible para pacientes</label>
-        <label class="check" for="f-i4"><input id="f-i4" type="checkbox">Hablar con alguien del equipo</label>
-      </fieldset>
-      <div><label class="lab" for="f-open">¿En qué pacientes la consideraría? (opcional)</label><textarea class="field" id="f-open" rows="3"></textarea></div>
-      <label class="consent" for="f-ok"><input id="f-ok" type="checkbox"><span>Autorizo a <span class="tbc">[RESPONSABLE]</span> a tratar mis datos para contactarme sobre esta lista de espera, según su Política de Tratamiento de Datos <span class="tbc">[ENLACE]</span> (Ley 1581 de 2012).</span></label>
-      <button class="submit" type="button" aria-disabled="true">Unirme a la lista de espera</button>
-      <p class="small">Sin pago, sin compromiso de compra y sin obligación de recomendarla.</p>
+    <form aria-label="Formulario de contacto (aún sin conectar)">
+      <p class="inactive">Formulario aún sin conectar: en este borrador no se envía ni se guarda nada.</p>
+      <div><label class="lab" for="f-mail">Correo</label><input class="field" id="f-mail" type="email" autocomplete="off" required></div>
+      <div><label class="lab" for="f-text">Su solicitud</label><textarea class="field" id="f-text" rows="5" required></textarea></div>
+      <label class="consent" for="f-ok"><input id="f-ok" type="checkbox" required><span>Autorizo a <span class="tbc">[RESPONSABLE]</span> a usar mis datos para responder a esta solicitud, según su política de datos <span class="tbc">[ENLACE]</span> (Ley 1581 de 2012).</span></label>
+      <button class="submit" type="button" aria-disabled="true">Enviar solicitud</button>
     </form>
   </div>
 </section>
@@ -450,25 +487,30 @@
 </main>
 
 <footer class="site-foot">
-  <div class="stack">
-    <h2>Referencias</h2>
-    <ol>
-      <li id="ref-1">Ocampo-Candiani J, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/39415312/" rel="noopener">Latin American consensus on the treatment of melasma</a>. Int J Dermatol. 2025;64(3):499–512.</li>
-      <li id="ref-2">Faurschou A, Wulf HC. <a href="https://www.guidelines.edf.one//uploads/attachments/cl263m8d700jplajnu2zd6jfd-photodermatoses-2010-photoprotection-gl.pdf" rel="noopener">European Dermatology Guideline for the photodermatoses: 3. Photoprotection</a>.</li>
-      <li id="ref-3">Secretaría de Salud de Bogotá, citada en <a href="https://www.elespectador.com/salud/fenomeno-el-nino-lo-que-debe-saber-del-indice-de-radiacion-ultravioleta/" rel="noopener">El Espectador</a>, 24 de enero de 2024. <span class="tbc">[SUSTITUIR POR FUENTE PRIMARIA]</span></li>
-      <li id="ref-4">Meehan R, et al. <a href="https://link.springer.com/article/10.1007/s43630-026-00997-8" rel="noopener">Photoprotection properties of clothing measured across ultraviolet and visible wavelengths</a>. Photochem Photobiol Sci. 2026.</li>
-      <li id="ref-5">Yoshida MM, Esposito ACC, Miot HA. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7672391/" rel="noopener">UVB, UVA, and visible light (blue-violet range) transmittance of clothing used in Brazil</a>. An Bras Dermatol. 2020.</li>
-      <li id="ref-6">DermNet. <a href="https://dermnetnz.org/topics/sun-protective-clothing" rel="noopener">Sun protective clothing</a>.</li>
-      <li id="ref-7">Backes C, et al. <a href="https://researchportal.lih.lu/en/publications/facial-exposure-to-ultraviolet-radiation-predicted-sun-protection/" rel="noopener">Facial exposure to ultraviolet radiation: predicted sun protection effectiveness of various hat styles</a>. Photodermatol Photoimmunol Photomed. 2018;34(5):330–337.</li>
-      <li id="ref-8">Kan CW, Yam LY, Ng SP. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5452796" rel="noopener">The effect of stretching on ultraviolet protection of cotton and cotton/Coolmax-blended weft knitted fabric in a dry state</a>. Materials. 2013;6(11):4985–4999.</li>
-      <li id="ref-9">Abreu ATA, et al. <a href="https://new.scielo.br/j/abd/a/LGWmq3KcDpvDxTyfcsRMs6j/?lang=en" rel="noopener">Factors associated with facial melasma severity in Brazilian women: an internet-based survey</a>. An Bras Dermatol. 2024;99(6).</li>
-    </ol>
-  </div>
-  <div class="stack">
-    <div class="wordmark"><span class="tbc">[MARCA]</span></div>
-    <p>Página dirigida a profesionales de la salud. Prenda de vestir; no es un medicamento ni un dispositivo médico. <span class="tbc">[REVISAR CON ABOGADO]</span></p>
-    <p><span class="tbc">[RAZÓN SOCIAL · DIRECCIÓN · CORREO]</span></p>
-    <p><span class="tbc">[ENLACE A POLÍTICA DE TRATAMIENTO DE DATOS]</span></p>
+  <div class="inner">
+    <div class="stack">
+      <h2>Referencias</h2>
+      <ol>
+        <li id="ref-1">Ocampo-Candiani J, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/39415312/" rel="noopener">Latin American consensus on the treatment of melasma</a>. Int J Dermatol. 2025;64(3):499–512.</li>
+        <li id="ref-2">Faurschou A, Wulf HC. <a href="https://www.guidelines.edf.one//uploads/attachments/cl263m8d700jplajnu2zd6jfd-photodermatoses-2010-photoprotection-gl.pdf" rel="noopener">European Dermatology Guideline for the photodermatoses: 3. Photoprotection</a>.</li>
+        <li id="ref-3">Secretaría de Salud de Bogotá, citada en <a href="https://www.elespectador.com/salud/fenomeno-el-nino-lo-que-debe-saber-del-indice-de-radiacion-ultravioleta/" rel="noopener">El Espectador</a>, 24 de enero de 2024. <span class="tbc">[SUSTITUIR POR FUENTE PRIMARIA]</span></li>
+        <li id="ref-4">Meehan R, et al. <a href="https://link.springer.com/article/10.1007/s43630-026-00997-8" rel="noopener">Photoprotection properties of clothing measured across ultraviolet and visible wavelengths</a>. Photochem Photobiol Sci. 2026.</li>
+        <li id="ref-5">Yoshida MM, Esposito ACC, Miot HA. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7672391/" rel="noopener">UVB, UVA, and visible light (blue-violet range) transmittance of clothing used in Brazil</a>. An Bras Dermatol. 2020.</li>
+        <li id="ref-6">DermNet. <a href="https://dermnetnz.org/topics/sun-protective-clothing" rel="noopener">Sun protective clothing</a>.</li>
+        <li id="ref-7">Backes C, et al. <a href="https://researchportal.lih.lu/en/publications/facial-exposure-to-ultraviolet-radiation-predicted-sun-protection/" rel="noopener">Facial exposure to ultraviolet radiation: predicted sun protection effectiveness of various hat styles</a>. Photodermatol Photoimmunol Photomed. 2018;34(5):330–337.</li>
+        <li id="ref-8">Kan CW, Yam LY, Ng SP. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5452796" rel="noopener">The effect of stretching on ultraviolet protection of cotton and cotton/Coolmax-blended weft knitted fabric in a dry state</a>. Materials. 2013;6(11):4985–4999.</li>
+        <li id="ref-9">Abreu ATA, et al. <a href="https://new.scielo.br/j/abd/a/LGWmq3KcDpvDxTyfcsRMs6j/?lang=en" rel="noopener">Factors associated with facial melasma severity in Brazilian women: an internet-based survey</a>. An Bras Dermatol. 2024;99(6).</li>
+        <li id="ref-10">Matta MK, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/31961417/" rel="noopener">Effect of sunscreen application on plasma concentration of sunscreen active ingredients: a randomized clinical trial</a>. JAMA. 2020;323(3):256–267.</li>
+        <li id="ref-11">Ekstein SF, Hylwa S. <a href="https://pubmed.ncbi.nlm.nih.gov/36279254/" rel="noopener">Sunscreens: a review of UV filters and their allergic potential</a>. Dermatitis. 2023;34:176–190.</li>
+        <li id="ref-12">Mavrić Z, Tomšič B, Simončič B. <a href="https://doaj.org/article/4a0902d13247456e845444d9d10d05ba" rel="noopener">Recent advances in the ultraviolet protection finishing of textiles</a>. Tekstilec. 2018;61(3):201–220.</li>
+      </ol>
+    </div>
+    <div class="stack">
+      <img src="img/logo-ivory.svg" alt="Nosadia" width="140" height="73" loading="lazy">
+      <p>Página dirigida a profesionales de la salud. Prenda de vestir; no es un medicamento ni un dispositivo médico. <span class="tbc">[REVISAR CON ABOGADO]</span></p>
+      <p><span class="tbc">[RAZÓN SOCIAL · DIRECCIÓN · CORREO]</span></p>
+      <p><span class="tbc">[ENLACE A POLÍTICA DE TRATAMIENTO DE DATOS]</span></p>
+    </div>
   </div>
 </footer>
 
