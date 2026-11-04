@@ -2,4 +2,4 @@
 .hero-photo{width:min(100%,540px)}
 .hero-photo::before{display:none}
 /* That rose circle makes this section the Ivory + Burgundy + Dusty rose recipe, so its lines turn burgundy */
-#cobertura .ways-block,#cobertura .caveat{border-color:var(--burgundy)}
+#cobertura .ways-block{border-color:var(--burgundy)}
