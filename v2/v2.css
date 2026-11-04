@@ -1,0 +1,4 @@
+/* Version 2: the hero is a photo with its own backdrop, so the rose circle only peeks out behind it */
+.hero-photo{width:min(100%,520px)}
+.hero-photo::before{left:auto;right:-4%;top:-4%;width:44%}
+@media (max-width:560px){.hero-photo::before{right:-3%;top:-3%}}

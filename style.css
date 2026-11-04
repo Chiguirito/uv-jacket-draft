@@ -151,3 +151,8 @@ textarea.field{min-height:150px;resize:vertical}
 .site-foot ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
 .site-foot li{scroll-margin-top:16px}
 .site-foot img{width:140px}
+
+/* Draft only: switch between the versions being compared */
+.versions{white-space:nowrap}
+.versions a,.versions b{font-weight:500}
+#panel{scroll-margin-top:24px}
