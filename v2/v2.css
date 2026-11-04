@@ -1,4 +1,5 @@
-/* Version 2: the hero is a photo with its own backdrop, so the rose circle only peeks out behind it */
-.hero-photo{width:min(100%,520px)}
-.hero-photo::before{left:auto;right:-4%;top:-4%;width:44%}
-@media (max-width:560px){.hero-photo::before{right:-3%;top:-3%}}
+/* Version 2: each person is cut out and rises out of a dusty rose circle, which is part of the image */
+.hero-photo{width:min(100%,540px)}
+.hero-photo::before{display:none}
+/* That rose circle makes this section the Ivory + Burgundy + Dusty rose recipe, so its lines turn burgundy */
+#cobertura .ways-block,#cobertura .caveat{border-color:var(--burgundy)}
