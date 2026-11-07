@@ -65,8 +65,8 @@ sup a:hover{text-decoration:underline}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 30px;background:var(--burgundy);color:var(--ivory);font-weight:500;text-decoration:none;align-self:flex-start}
 .btn:hover{background:var(--cocoa)}
 .hero-figure{position:relative;display:flex;flex-direction:column;align-items:center;gap:12px}
-.hero-photo{position:relative;width:min(100%,500px)}
-.hero-photo::before{content:"";position:absolute;left:10%;right:0;top:15%;aspect-ratio:1;border-radius:50%;background:var(--rose)}
+/* The person is cut out and rises out of a dusty rose circle, which is part of the image */
+.hero-photo{position:relative;width:min(100%,540px)}
 .hero-photo img{position:relative;width:100%}
 
 /* Complement */
@@ -102,6 +102,8 @@ b{font-weight:500}
 .detail img{width:100%;aspect-ratio:1;object-fit:cover}
 .detail figcaption{font-size:15px;line-height:1.6}
 .ways-block{border-top:1px solid var(--olive);padding-top:clamp(36px,5vw,56px)}
+/* The rose circle in the panel photo makes this section the Ivory + Burgundy + Dusty rose recipe, so its lines turn burgundy */
+#cobertura .ways-block{border-color:var(--burgundy)}
 .ways{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:32px}
 
 /* Questions */
@@ -130,7 +132,3 @@ textarea.field{min-height:150px;resize:vertical}
 .site-foot li{scroll-margin-top:16px}
 .site-foot img{width:140px}
 
-/* Draft only: switch between the versions being compared */
-.versions{white-space:nowrap}
-.versions a,.versions b{font-weight:500}
-#panel{scroll-margin-top:24px}
