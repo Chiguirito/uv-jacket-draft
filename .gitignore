@@ -1,2 +1,4 @@
 .DS_Store
 nosadia_palette_guide*.png
+.wrangler/
+node_modules/
