@@ -1,12 +1,14 @@
 # Landing page draft
 
-Working draft of a landing page. It is not a live offer and collects no data: the form has no backend. The page is marked `noindex`.
+Working draft of a landing page. It is not a live offer and collects no data: the form has no backend. The page is marked `noindex`, both in the HTML and as an `X-Robots-Tag` header.
 
-Static HTML and CSS, served by GitHub Pages from `main`. No build step.
+Static HTML and CSS, no build step. Cloudflare Pages serves `public/` from `main` at https://nosadia.com and redeploys on every `git push`.
 
-- `index.html`: the one page. A strict Content-Security-Policy blocks inline styles and scripts, so all styling lives in `style.css`.
-- `img/`: everything the page shows. Every file in it is used.
-- `og.png`: link preview image.
-- `v2/index.html`: forwards to the root. Version 2 became the page on 2026-11-07, and this keeps old links working.
+- `public/index.html`: the one page. A strict Content-Security-Policy blocks inline styles and scripts, so all styling lives in `public/style.css`.
+- `public/_headers`: HTTP headers Cloudflare adds to every response (noindex, CSP, HSTS and other security headers). Keep its CSP in step with the `<meta>` CSP in `index.html`.
+- `public/img/`: everything the page shows. Every file in it is used.
+- `public/og.png`: link preview image. `og:image` and `og:url` in `index.html` are absolute nosadia.com URLs.
+
+Branch `gh-pages` serves the old draft address, https://chiguirito.github.io/uv-jacket-draft/, through GitHub Pages. Don't edit the page there: it only forwards visitors to nosadia.com.
 
 How the images were made, and how to deploy and check: `../landing/image-pipeline/README.md`.
