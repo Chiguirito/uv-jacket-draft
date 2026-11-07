@@ -7,7 +7,8 @@
   "assets": {
     "directory": "./public"
   },
-  // Test address nosadia.paul-b3f.workers.dev. Switch off once nosadia.com is live.
-  "workers_dev": true,
+  // Custom domains nosadia.com and www.nosadia.com are set in the dashboard (Domains tab), not here.
+  // The workers.dev test address is off, so the site lives at nosadia.com only.
+  "workers_dev": false,
   "preview_urls": false
 }
