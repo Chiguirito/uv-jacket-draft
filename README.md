@@ -1,6 +1,6 @@
 # Landing page draft
 
-Working draft of a landing page. It is not a live offer and collects no data: the form has no backend. The page is marked `noindex`, both in the HTML and as an `X-Robots-Tag` header.
+Working draft of a landing page. It is not a live offer and collects no data: there's no form, only a WhatsApp link (`wa.me`) in the contact section. The page is marked `noindex`, both in the HTML and as an `X-Robots-Tag` header.
 
 Static HTML and CSS, no build step. A Cloudflare Worker named `nosadia` serves `public/` as static assets at https://nosadia.com. Cloudflare redeploys it on every `git push` to `main`; `wrangler.jsonc` holds its settings, and the build log is in the dashboard under Workers & Pages → nosadia.
 
