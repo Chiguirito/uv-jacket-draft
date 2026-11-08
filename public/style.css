@@ -47,10 +47,6 @@ sup a:hover{text-decoration:underline}
 .r-dark .dash{color:var(--oatmeal)}
 .r-contact{background:var(--burgundy);color:var(--ivory)}
 
-/* Draft banner */
-.draft{background:var(--cocoa);color:var(--ivory);font-size:13px;line-height:1.5}
-.draft p{max-width:1180px;margin:0 auto;padding:9px var(--pad)}
-
 /* Header */
 .site-head{max-width:1180px;margin:0 auto;padding:22px var(--pad);display:flex;flex-wrap:wrap;gap:10px 28px;align-items:center;justify-content:space-between}
 .site-head img{width:148px}
